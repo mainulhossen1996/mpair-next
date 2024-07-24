@@ -2,32 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  color: #262626;
+  background-color: #fff;
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff;
+}
+
+
+#navBar{
+background: rgba(255, 255, 255, 0.60);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+}
+
+.hero-bg{
+  background-image: url("/image/heroback.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 880px
+}
+
+.product-box{
+  background-image: url("/image/herobac.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%
+}
+.how-bg{
+  background-image: url("/image/how-bg.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 750px
+}
+.product-bg{
+  background-image: url("/image/product-back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px
+}
+.header-text{
+  font-size: 90px;
+  font-weight: 600;
+}
+.header-primary{
+  font-size: 50px;
+  font-weight: 500;
+}
+.header-small{
+  font-size: 20px;
+  font-weight: 500;
+}
+.active-tab-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 16px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/* .tab-shadow:hover{
+  box-shadow: rgba(16, 16, 16, 0.06) 0px 0px 0px 1px;
+} */
+.active-svg{
+  filter: invert(51%) sepia(96%) saturate(4846%) hue-rotate(191deg) brightness(100%) contrast(101%);
+}
+.inactive-svg{
+  filter: invert(34%) sepia(9%) saturate(6%) hue-rotate(314deg) brightness(94%) contrast(94%);
+}
+.ind-box:hover .inactive-svg{
+  filter: invert(51%) sepia(96%) saturate(4846%) hue-rotate(191deg) brightness(100%) contrast(101%);
+}
+.ind-box:hover .ind-text{
+  filter: invert(51%) sepia(96%) saturate(4846%) hue-rotate(191deg) brightness(100%) contrast(101%);
+}
+.expert-item:hover p{
+color: rgb(35, 42, 49);
 }
