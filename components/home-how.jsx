@@ -73,7 +73,7 @@ export const HomeHow = () => {
             </div>
             <div className=''>
             <h1 className='text-[70px] text-slate-400 font-semibold text-end'>
-                YOUR BUSINESS PROCESS
+                YOUR BUSINESS PROCESS 
             </h1>
             
             </div>
