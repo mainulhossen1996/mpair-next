@@ -65,6 +65,14 @@ backdrop-filter: blur(15px);
   font-size: 20px;
   font-weight: 500;
 }
+
+.industry-card{
+background: rgba(255, 255, 255, 0.8);
+border-radius: 16px;
+backdrop-filter: blur(7.8px);
+-webkit-backdrop-filter: blur(7.8px);
+border: 1px solid rgba(255, 255, 255, 0.57);
+}
 .active-tab-shadow{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 16px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -83,6 +91,35 @@ backdrop-filter: blur(15px);
 .ind-box:hover .ind-text{
   filter: invert(51%) sepia(96%) saturate(4846%) hue-rotate(191deg) brightness(100%) contrast(101%);
 }
+
+
 .expert-item:hover p{
 color: rgb(35, 42, 49);
 }
+
+
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-fade {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  pointer-events: none;
+}
+
+.scroll-fade-left {
+  left: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+.scroll-fade-right {
+  right: 0;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+
+
