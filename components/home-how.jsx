@@ -5,20 +5,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export const HomeHow = () => {
   const { scrollYProgress } = useScroll();
 
-  const startOffset1 = "30%";
-  const endOffset1 = "-28.5%";
+  const startOffset1 = "20%";
+  const endOffset1 = "-25.5%";
 
   const startOffset2 = "-70%";
-  const endOffset2 = "22%";
+  const endOffset2 = "18%";
 
   const x1 = useTransform(
     scrollYProgress,
-    [0.4, 0],
+    [0.36, 0],
     [endOffset1, startOffset1]
   );
   const x2 = useTransform(
     scrollYProgress,
-    [0.4, 0],
+    [0.36, 0],
     [endOffset2, startOffset2]
   );
 
@@ -29,7 +29,7 @@ export const HomeHow = () => {
           style={{ x: x1 }}
           className="w-full flex justify-center" // Center the content
         >
-          <h1 className="text-[70px] text-slate-400 font-semibold text-start">
+          <h1 className="text-[80px] text-slate-400 font-semibold text-start">
             HOW WE AUTOMATE
           </h1>
         </motion.div>
@@ -125,7 +125,7 @@ export const HomeHow = () => {
             style={{ x: x2 }}
             className="flex justify-center" // Center the content
           >
-            <h1 className="text-[70px] text-slate-400 font-semibold text-start">
+            <h1 className="text-[80px] text-slate-400 font-semibold text-start">
               YOUR BUSINESS PROCESS
             </h1>
           </motion.div>

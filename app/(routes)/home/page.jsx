@@ -1,5 +1,6 @@
 'use client'
 import { HomeArticle } from "@/components/home-article";
+import { Homeb2b } from "@/components/home-b2b";
 import { HomeExpert } from "@/components/home-expert";
 import { HomeHero } from "@/components/home-hero";
 import { HomeHow } from "@/components/home-how";
@@ -18,6 +19,7 @@ export default function Home() {
   <HomeHow />
   <HomeExpert/>
   <HomeService/>
+  <Homeb2b/>
   <HomeArticle/>
     </>
   );

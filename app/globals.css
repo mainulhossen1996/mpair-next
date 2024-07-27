@@ -53,6 +53,18 @@ backdrop-filter: blur(15px);
   background-repeat: no-repeat;
   height: 900px
 }
+.b2b-box{
+  background-image: url("/image/herobac.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.b2b-card{
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
 .header-text{
   font-size: 90px;
   font-weight: 600;
@@ -91,7 +103,13 @@ border: 1px solid rgba(255, 255, 255, 0.57);
 .ind-box:hover .ind-text{
   filter: invert(51%) sepia(96%) saturate(4846%) hue-rotate(191deg) brightness(100%) contrast(101%);
 }
-
+.scroll-button{
+  background-image: url("/image/scrollback.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 500px;
+}
 
 .expert-item:hover p{
 color: rgb(35, 42, 49);
