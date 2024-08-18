@@ -111,6 +111,9 @@ border: 1px solid rgba(255, 255, 255, 0.57);
   height: 500px;
 }
 
+/* .expert-bg{
+  background-color: #0077ff;
+} */
 .expert-item:hover p{
 color: rgb(35, 42, 49);
 }
@@ -139,5 +142,15 @@ color: rgb(35, 42, 49);
   background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 
+.active-scroll-spy {
+  background-color: yellowgreen;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.ss-item {
+  color: black;
+  padding: 30px;
+  margin: 10px;
+}
 
 

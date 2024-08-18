@@ -1,7 +1,7 @@
 'use client'
+import ExpertTabs from "@/components/expertItem/expertTabs";
 import { HomeArticle } from "@/components/home-article";
 import { Homeb2b } from "@/components/home-b2b";
-import { HomeExpert } from "@/components/home-expert";
 import { HomeHero } from "@/components/home-hero";
 import { HomeHow } from "@/components/home-how";
 import { HomeProduct } from "@/components/home-product";
@@ -17,9 +17,10 @@ export default function Home() {
   <Pair/>
   <HomeProduct/>
   <HomeHow />
-  <HomeExpert/>
+  <ExpertTabs/>
   <HomeService/>
   <Homeb2b/>
+
   <HomeArticle/>
     </>
   );
