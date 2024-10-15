@@ -59,7 +59,7 @@ const Industry = () => {
   }, [scrollY, tabControls, tabs]);
 
   return (
-    <div className="max-w-screen-2xl mx-auto justify-center">
+    <div className="max-w-screen-xl mx-auto justify-center">
       <motion.p
         className="text-center mb-6 font-medium mt-6"
         animate={controls}

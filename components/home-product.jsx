@@ -20,7 +20,7 @@ export const HomeProduct = () => {
     ,]
   return (
     <section className='product-bg'>
-    <div className='max-w-screen-2xl mx-auto py-20'>
+    <div className='max-w-screen-xl mx-auto py-20'>
         <h1 className='text-center text-[60px] font-semibold'>Our Products For Your Business</h1>
         <p className="mb-3 font-medium text-xl text-center text-gray-500">
             Explore mPair Products to meet the diverse requirements of desired

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const HomeArticle = () => {
   return (
-    <div className='max-w-screen-2xl mx-auto py-20'>
+    <div className='max-w-screen-xl mx-auto py-20'>
         <h1 className='text-[50px] font-semibold'>Articles & Activities</h1>
         <p className='text-gray-500 text-xl text-medium mb-3'>Our expertise solutions proven by more than million users around the world</p>
         <div className='flex gap-4 mt-10'>

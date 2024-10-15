@@ -10,7 +10,7 @@ const Pair = () => {
 return(
     <>
     <div className='bg-slate-100'>
-        <div className='text-center max-w-screen-2xl py-12 mx-auto'>
+        <div className='text-center max-w-screen-xl py-12 mx-auto'>
             <div className='flex justify-center gap-2 items-center'>
             <p className='text-2xl font-semibold leading-10'>More Than 20 Brands Have Paired With Us</p>
         <Link href="/clients" className="text-sm text-gray-400 hover:text-blue-600">

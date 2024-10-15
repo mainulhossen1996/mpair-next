@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
       <>
-<footer class="mt-auto max-w-screen-2xl pt-10 mx-auto footer">
+<footer class="mt-auto max-w-screen-xl pt-10 mx-auto footer">
   <div class="text-center">
 <div className='max-w-screen-lg mx-auto mb-20'>
   <div className='p-6 h-[150px] bg-blue-600 rounded-xl'>

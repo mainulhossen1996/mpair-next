@@ -40,7 +40,7 @@ export const HomeHero = () => {
         </div>
       </section>
 
-      <div className="max-w-screen-2xl lg:px-10 mx-auto justify-center mt-16">
+      <div className="max-w-screen-xl mx-auto justify-center mt-16">
         <p className="text-center mb-6 font-medium text-lg">Industry Excellence ⭐ ⭐ ⭐</p>
         <div className="relative scroll-container">
           <motion.div

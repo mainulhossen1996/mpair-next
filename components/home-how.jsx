@@ -24,7 +24,7 @@ export const HomeHow = () => {
 
   return (
     <div className="how-bg">
-      <div className="max-w-screen-2xl mx-auto py-20">
+      <div className="max-w-screen-xl mx-auto py-20">
         <motion.div
           style={{ x: x1 }}
           className="w-full flex justify-center" // Center the content

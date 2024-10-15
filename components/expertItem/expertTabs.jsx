@@ -58,7 +58,7 @@ const handleTabClick = (name, index) => {
   }
 };
   return (
-    <div className="max-w-screen-2xl mx-auto expert-section lg:flex">
+    <div className="max-w-screen-xl mx-auto expert-section lg:flex">
       <div className="border-r lg:sticky lg:top-0 lg:w-1/3 font-semibold pb-36">
         
 

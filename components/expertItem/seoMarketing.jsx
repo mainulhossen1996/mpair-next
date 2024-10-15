@@ -5,13 +5,11 @@ import image from "../../public/image/ServiceImage/preview.png"
 
 const SEO = () => {
   return (
-    <div className="h-[70vh]">
+    <div className="">
       
         <p className="px-[20px] text-[50px] text-slate-400 font-bold mb-3">SEO & Marketing</p>
           <p className="px-[20px] lg:text-2xl text-grayishOlive">
-            Interior design in modern homes emphasizes clean lines, minimalism,
-            and functional spaces. Neutral colors with bold accents, natural
-            materials like wood and stone, and ample natural light are key.{" "}
+          Unlock rapid business growth with targeted SEO and strategic marketing. Enhance your online presence, drive high-quality traffic, increase brand visibility, and convert leads into loyal customers.
           </p>
           <Image src={image}
                 height={350}
