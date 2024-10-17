@@ -68,15 +68,15 @@ export const Navbar = () => {
                 onMouseEnter={() => setServiceDropdownOpen(true)}
                 className={`relative`}
               >
-                <div className={`font-medium hover:text-[#008CFF] cursor-pointer text-lg ${pathname === "/service" ? "text-[#008CFF]" : "text-gray-600"}`}>
+                <div className={`font-medium hover:text-[#008CFF] cursor-pointer text-lg ${pathname === "/servicess" ? "text-[#008CFF]" : "text-gray-600"}`}>
                   Service
                 </div>
                 
                 {isServiceDropdownOpen && (
                   <div className="absolute left-0 top-16 mt-2 w-48 bg-white shadow-lg rounded-lg">
-                    <Link href="/service1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 1</Link>
-                    <Link href="/service2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 2</Link>
-                    <Link href="/service3" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 3</Link>
+                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 1</Link>
+                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 2</Link>
+                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 3</Link>
                   </div>
                 )}
               </div>
@@ -107,7 +107,7 @@ export const Navbar = () => {
 
           {/* Right side buttons and links */}
           <div className="hidden md:flex gap-10 items-center">
-            <Link href="/sales" className={`font-medium flex items-center ${pathname === "/sales" ? "text-[#ffffff]" : "text-white"}`}>
+            <Link href="/contact" className={`font-medium flex items-center ${pathname === "/contact" ? "text-[#ffffff]" : "text-white"}`}>
               <Button className="bg-[#008CFF] hover:bg-[#0077ff] px-6 py-2">
                 <Mail size={20} /><p className="ml-2">Contact Us</p>
               </Button>
