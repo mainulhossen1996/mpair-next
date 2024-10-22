@@ -8,7 +8,7 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   images: {
-    domains: ['i.ibb.co'], // Add your external image domain here
+    domains: ['i.ibb.co'], 
   },
   theme: {
     extend: {

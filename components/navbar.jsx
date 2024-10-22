@@ -108,7 +108,7 @@ export const Navbar = () => {
           {/* Right side buttons and links */}
           <div className="hidden md:flex gap-10 items-center">
             <Link href="/contact" className={`font-medium flex items-center ${pathname === "/contact" ? "text-[#ffffff]" : "text-white"}`}>
-              <Button className="bg-[#008CFF] hover:bg-[#0077ff] px-6 py-2">
+              <Button className="bg-[#008CFF] hover:bg-[#0077ff] px-6 py-2 text-white rounded-none">
                 <Mail size={20} /><p className="ml-2">Contact Us</p>
               </Button>
             </Link>

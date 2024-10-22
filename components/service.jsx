@@ -12,14 +12,24 @@ const Service = () => {
 
   return (
     <>
-      <div className="w-[1200px] mx-auto flex flex-col items-start">
+    <div
+        className="relative bg-cover bg-center bg-repeat"
+        style={{
+          backgroundImage: "url('/image/bg.png')",  
+          width: "100%", 
+        }}
+      >
+        <div className="absolute inset-0 bg-white opacity-95"></div>
+
+
+      <div className="relative max-w-screen-xl mx-auto flex flex-col items-start">
         <p className="text-[#4F4F4F] text-[52px] font-bold my-[20px]">Cloud & Software</p>
         <p className="text-[#008CFF] text-[35px] font-bold mb-[20px]">Making Digital Revolution</p>
         <p className="w-[900px] text-[#818181] mb-[40px]">
           Utilizing the latest web technologies, Team mPair will provide you with the best and innovative Cloud & Software solutions. Businesses can be more flexible by using their resources from any location because of cloud application development services.
         </p>
 
-        <div className="flex justify-between items-start w-full gap-[20px]">
+        <div className="flex justify-between items-start w-full gap-[20px] mt-[70px]">
           <div className="flex flex-col gap-2">
 
             <div className="flex items-center">
@@ -55,17 +65,17 @@ const Service = () => {
 
           <div className="flex justify-between items-center gap-[20px]">
        
-            <div className="relative w-[200px] h-[300px]">
+            <div className="relative w-[300px] h-[180px]">
               <Image
-                className="h-[150px]"
+                className="h-[180px]"
                 src="/image/service1.png"
                 alt="service1"
                 width={300}
-                height={300}
+                height={180}
               />
             </div>
         
-            <div className="relative w-[200px] h-[300px] -mt-[50px]">
+            <div className="relative w-[200px] h-[300px] -mt-[80px]">
               <Image
                 className="h-[150px]"
                 src="/image/service2.png"
@@ -80,7 +90,7 @@ const Service = () => {
      
        
       </div>
-      <div className="bg-[#EDF5FA] w-full h-[315px] mt-[60px]">
+      <div className="relative bg-[#EDF5FA] w-full h-[315px] mt-[50px]">
           <div className="py-[20px]">
             <p className="text-center text-[#4F4F4F] text-[32px] font-semibold">Upscaling Business Through</p>
             <div className="flex justify-around items-center my-[40px]">
@@ -102,6 +112,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
     </>
   );
