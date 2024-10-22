@@ -1,16 +1,23 @@
 'use client'
 import {Divider} from "@nextui-org/react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import {Input} from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
 import Link from "next/link";
 import { IoMdStar } from "react-icons/io";
 
 const Careerinside = () => {
 
-
 return(
     <>
+     <div
+        className="relative bg-cover bg-center bg-repeat"
+        style={{
+          backgroundImage: "url('/image/bg.png')",  
+          width: "100%", 
+        }}
+      >
+        <div className="absolute inset-0 bg-white opacity-95"></div>
+        <div className="relative w-[949px] mx-auto ">
       <div>
       <div className="w-[949px] h-[224px] mx-auto bg-gradient-to-r from-[#7141D1] to-[#3F6BEC] p-[30px]">
         <p className="text-[14px] font-bold text-white transition-colors duration-300">ENGINEER</p>
@@ -24,13 +31,13 @@ return(
     </div>
     <div className="my-[20px] flex justify-between items-center">
         <p className="text-[16px] font-semibold text-white transition-colors duration-300">18,000-26,000 BDT/month</p>
-        <Link href=""><p className="text-white font-semibold flex item-center gap-[3px]">Apply Now <FaArrowRightLong className="text-white mr-9 mt-[3px]" /></p></Link>
+        <Link href=""><p className="text-white font-semibold flex items-center gap-[3px]">Apply Now <FaArrowRightLong className="text-white mr-9 mt-[3px]" /></p></Link>
     </div>
     </div>
 
 
 
-    <div className="mx-[280px]">
+    <div>
  <p className="text-[20px] text-[#2A2A2A] font-bold mt-[50px]">About</p>
  <p className="text-[#5F5F5F]">At mPair, we are dedicated to building the next generation of innovative software solutions. Our team is composed of<br/>
     talented and passionate designers, and we are excited to expand our creative team with individuals who share our vision<br/>
@@ -70,24 +77,31 @@ return(
 </div>
 
 
-<div className="p-[50px] w-[949px] h-[770px] bg-[#F1F1F1] border-[1px] border-solid border-[#DBDBDB] mx-auto my-[100px]">
+<div className="p-[50px] w-[949px] h-[790px] bg-[#F1F1F1] border-[1px] border-solid border-[#DBDBDB] mx-auto my-[100px]">
   <p className="text-[38px] text-[#2A2A2A] font-bold">Apply Now.</p>
   <div className="mt-[50px]">
   <p className="mt-[15px] mb-[10px] font-semibold flex item-center">Full Name <IoMdStar className="text-[#FF0000] text-[7px]" /></p>
-  <Input type="email" label="Enter you name" className="w-[810px] h-[50px] my-[5px] bg-white" variant="bordered"/>
+  <input type="text" placeholder="Enter your name" className="w-[810px] h-[50px] my-[5px] bg-white border border-[#DBDBDB] px-4 rounded-none"/>
+  
   <p className="mt-[15px] mb-[10px] font-semibold flex item-center">Email <IoMdStar className="text-[#FF0000] text-[7px]" /></p>
-  <Input type="email" label="Enter your email" className="w-[810px] h-[50px] my-[5px] bg-white" variant="bordered"/>
+  <input type="email" placeholder="Enter your email" className="w-[810px] h-[50px] my-[5px] bg-white border border-[#DBDBDB] px-4 rounded-none"/>
+  
   <p className="mt-[15px] mb-[10px] font-semibold flex item-center">Phone <IoMdStar className="text-[#FF0000] text-[7px]" /></p>
-  <Input type="email" label="ex. +8801 * * **" className="w-[810px] h-[50px] my-[5px] bg-white" variant="bordered"/>
+  <input type="tel" placeholder="ex. +8801 * * **" className="w-[810px] h-[50px] my-[5px] bg-white border border-[#DBDBDB] px-4 rounded-none"/>
+  
   <p className="mt-[15px] mb-[10px] font-semibold flex item-center">Portfolio <IoMdStar className="text-[#FF0000] text-[7px]" /></p>
-  <Input type="email" label="Enter link here" className="w-[810px] h-[50px] my-[5px] bg-white" variant="bordered"/>
+  <input type="url" placeholder="Enter link here" className="w-[810px] h-[50px] my-[5px] bg-white border border-[#DBDBDB] px-4 rounded-none"/>
+  
   <p className="mt-[15px] mb-[10px] font-semibold flex item-center">LinkedIn <IoMdStar className="text-[#FF0000] text-[7px]"/></p>
-  <Input type="email" label="Enter link here" className="w-[810px] h-[50px] my-[5px] bg-white " variant="bordered"/>
+  <input type="url" placeholder="Enter link here" className="w-[810px] h-[50px] my-[5px] bg-white border border-[#DBDBDB] px-4 rounded-none"/>
+  
   <Button className="bg-[#2A2A2A] w-[810px] h-[50px] text-white mt-[30px] rounded-none">Submit Application</Button>
   </div>
 </div>
 
 
+      </div>
+      </div>
       </div>
     </>
 )

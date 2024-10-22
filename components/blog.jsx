@@ -3,12 +3,22 @@ import {Divider} from "@nextui-org/react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 
 const Blog = () => {
   return (
     <>
-      <div className="w-[1000px] mx-auto flex flex-col items-start">
+    <div
+        className="relative bg-cover bg-center bg-repeat"
+        style={{
+          backgroundImage: "url('/image/bg.png')",  
+          width: "100%", 
+        }}
+      >
+        <div className="absolute inset-0 bg-white opacity-95"></div>
+        <div className="relative max-w-screen-xl mx-auto ">
+      <div className="relative w-[1000px] mx-auto flex flex-col items-start">
         <div >
           <p className="text-[#008CFF] font-bold mt-[50px] text-left">BUSINESS BLOG</p>
           <p className="text-[#2A2A2A] text-[38px] font-bold my-[20px] text-left">
@@ -16,8 +26,15 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="w-[949px] h-[399px] bg-black mt-[50px]"></div>  
-         
+        <div className="w-[949px] h-[399px] bg-gradient-to-r from-[#7141D1] to-[#3F6BEC] mt-[50px]">
+        {/* <Image
+                className="w-[949px]"
+                src="/image/blog.png"
+                alt="vector"
+                width={949}
+                height={399}
+              />  */}
+         </div>
 
          <div className="my-[50px]">
             <div className="my-[25px]">
@@ -48,6 +65,8 @@ const Blog = () => {
         </div>
          <Divider className="my-4" />
        
+      </div>
+      </div>
       </div>
     </>
   );

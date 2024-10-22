@@ -7,13 +7,20 @@ const Client = () => {
 
 return(
     <>
-   <div>
-   <div >
+  <div
+        className="relative bg-cover bg-center bg-repeat"
+        style={{
+          backgroundImage: "url('/image/bg.png')",  
+          width: "100%", 
+        }}
+      >
+        <div className="absolute inset-0 bg-white opacity-95"></div>
+   <div className="relative max-w-screen-xl mx-auto">
     <p className="text-[#4F4F4F] text-[62px] font-bold text-center pt-[30px]">Powering up <span className="text-[#008CFF]">20+ Brands .</span></p>
     <p className="text-center text-[20px] mt-[15px] text-black">We dive into your unique needs with the enthusiasm of a kid in a candy store, crafting web development and business<br/> automation solutions that make your business sing.</p>
     </div>
 
-   <div className="grid grid-cols-4 mx-[90px] my-[70px] gap-[15px] ">
+   <div className="relative max-w-screen-xl mx-auto grid grid-cols-4 my-[70px] gap-[15px] ">
    <Card className="w-[320px] h-[344px] rounded-none hover:shadow-lg transition-shadow duration-300 items-center">
    <CardHeader>
     <Image

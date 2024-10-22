@@ -73,11 +73,63 @@ export const Navbar = () => {
                 </div>
                 
                 {isServiceDropdownOpen && (
-                  <div className="absolute left-0 top-16 mt-2 w-48 bg-white shadow-lg rounded-lg">
-                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 1</Link>
-                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 2</Link>
-                    <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Service 3</Link>
-                  </div>
+                   <div className="absolute left-0 top-16 mt-2 w-[1000px] bg-white shadow-lg rounded-lg flex justify-around items-center">
+                   <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+                   <Image
+                className="h-[137px]"
+                src="/image/service1.png"
+                alt="service1"
+                width={184}
+                height={137}
+              />
+               <Image
+                className="h-[102px] mt-[-80px] ml-[80px]"
+                src="/image/service2.png"
+                alt="service2"
+                width={140}
+                height={102}
+              />
+             <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+             </Link>
+             <div className="h-[263px] border-l border-[#DBDBDB]"></div>
+
+             <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+             <Image
+                className="h-[137px]"
+                src="/image/service1.png"
+                alt="service1"
+                width={184}
+                height={137}
+              />
+               <Image
+                className="h-[102px] mt-[-80px] ml-[80px]"
+                src="/image/service2.png"
+                alt="service2"
+                width={140}
+                height={102}
+              />
+             <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+             </Link>
+             
+             <div className="h-[263px] border-l border-[#DBDBDB]"></div>
+             <Link href="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+             <Image
+                className="h-[137px]"
+                src="/image/service1.png"
+                alt="service1"
+                width={184}
+                height={137}
+              />
+               <Image
+                className="h-[102px] mt-[-80px] ml-[80px]"
+                src="/image/service2.png"
+                alt="service2"
+                width={140}
+                height={102}
+              />
+             <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+             </Link>
+                 </div>
                 )}
               </div>
 
@@ -86,15 +138,75 @@ export const Navbar = () => {
                 onMouseEnter={() => setProductsDropdownOpen(true)}
                 className={`relative`}
               >
-                <Link href="/features" className={`font-medium hover:text-[#008CFF] cursor-pointer  text-lg ${pathname === "/features" ? "text-[#008CFF]" : "text-gray-600"}`}>
+                {/* <Link href="/features" className={`font-medium hover:text-[#008CFF] cursor-pointer  text-lg ${pathname === "/features" ? "text-[#008CFF]" : "text-gray-600"}`}>
                   Products
-                </Link>
+                </Link> */}
+                <div className={`font-medium hover:text-[#008CFF] cursor-pointer  text-lg ${pathname === "/features" ? "text-[#008CFF]" : "text-gray-600"}`}>
+                  Products
+                </div>
                 
                 {isProductsDropdownOpen && (
-                  <div className="absolute left-0 top-16 mt-2 w-48 bg-white shadow-lg rounded-lg">
-                    <Link href="/product1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 1</Link>
-                    <Link href="/product2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</Link>
-                    <Link href="/product3" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 3</Link>
+                  // <div className="absolute left-0 top-16 mt-2 w-48 bg-white shadow-lg rounded-lg">
+                  //   <Link href="/product1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 1</Link>
+                  //   <Link href="/product2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</Link>
+                  //   <Link href="/product3" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 3</Link>
+                  // </div>
+                  <div className="absolute left-0 top-16 mt-2 w-[1000px] bg-white shadow-lg rounded-lg flex justify-around items-center">
+                    <Link href="/products" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+                <Image
+                className="w-[100px] my-[20px]"
+                src="/image/p1icon.png"
+                alt="vector"
+                width={100}
+                height={100}
+              />
+               <Image
+                className="w-[140px] my-[20px]"
+                src="/image/project1.png"
+                alt="vector"
+                width={140}
+                height={100}
+              />
+              <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+              </Link>
+              <div className="h-[263px] border-l border-[#DBDBDB]"></div>
+
+              <Link href="/products" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+                <Image
+                className="w-[100px] my-[20px]"
+                src="/image/p1icon.png"
+                alt="vector"
+                width={100}
+                height={100}
+              />
+              <Image
+                className="w-[140px] my-[20px]"
+                src="/image/project1.png"
+                alt="vector"
+                width={140}
+                height={100}
+              />
+              <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+              </Link>
+              
+              <div className="h-[263px] border-l border-[#DBDBDB]"></div>
+              <Link href="/products" className="block px-4 py-2 text-gray-700 hover:bg-gray-100"> 
+                <Image
+                className="w-[100px] my-[20px]"
+                src="/image/p1icon.png"
+                alt="vector"
+                width={100}
+                height={100}
+              />
+               <Image
+                className="w-[140px] my-[20px]"
+                src="/image/project1.png"
+                alt="vector"
+                width={140}
+                height={100}
+              />
+              <p className="w-[201px] text-[14px] text-[#9A9A9A]">From Planning to Profit: Experience Business Growth Through Our Integrated Approach.</p>
+              </Link>
                   </div>
                 )}
               </div>

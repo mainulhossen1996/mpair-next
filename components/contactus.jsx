@@ -23,9 +23,17 @@ const Contactus = () => {
 
 return(
     <>
-    <div className='bg-slate-100 py-[50px]'>
-    <p className="text-[#008CFF] text-[62px] font-bold ml-[95px] pt-[30px]">Contact Us.</p>
-    <p className="text-[#909090] text-[42px] font-semibold ml-[95px]">Reach out today and discover how we can transform your<br/> digital landscape.</p>
+    <div
+        className="relative bg-cover bg-center bg-repeat"
+        style={{
+          backgroundImage: "url('/image/bg.png')",  
+          width: "100%", 
+        }}
+      >
+        <div className="absolute inset-0 bg-white opacity-95"></div>
+        <div className="relative max-w-screen-xl mx-auto ">
+    <p className="text-[#008CFF] text-[62px] font-bold ml-[90px] pt-[30px]">Contact Us.</p>
+    <p className="text-[#909090] text-[42px] font-semibold ml-[90px]">Reach out today and discover how we can transform your<br/> digital landscape.</p>
     <div className="w-[993px] h-[422px] bg-[#F8F8F8] mx-auto my-[80px] border-[1px] border-solid border-[#DBDBDB]">
       <div className="flex justify-around item-center">
         <div>
@@ -55,13 +63,13 @@ return(
     >
       {(item) => <AutocompleteItem key={item.value}>{item.label}</AutocompleteItem>}
     </Autocomplete>
-        <Input type="email" label="Your business mail" className="w-[492px] h-[42px] my-[5px]" variant="bordered"/>
+        <Input type="email" label="Your business mail" className="w-[492px] h-[42px] my-[5px] rounded-none" variant="bordered"/>
     <Textarea
       placeholder="Describe your requirements here"
       className="w-[492px] my-[5px]"
       variant="bordered"
     />
-    <Button className="bg-[#2A2A2A] w-[492px] h-[42px] text-white my-[5px]">
+    <Button className="bg-[#2A2A2A] w-[492px] h-[42px] text-white my-[5px] rounded-none">
      Send Queries
     </Button>
     </div>
@@ -73,7 +81,7 @@ return(
     </div>
 
 
-    <p className="text-[38px] font-bold ml-[300px] mt-[50px]">How Can We Help You?</p>
+    <p className="text-[38px] font-bold mt-[50px] w-[993px] mx-auto">How Can We Help You?</p>
     <div className="w-[993px] h-[422px] bg-[#F8F8F8] mx-auto my-[80px] border-[1px] border-solid border-[#DBDBDB] p-[20px] text-[#5B6063]">
     <Accordion variant="splitted">
       <AccordionItem key="1" aria-label="Accordion 1" title="I need to know more about your services">
@@ -96,11 +104,11 @@ return(
     </div>
 
     </div>
+    </div>
     </>
 )
 }
 export default Contactus;
-
 
 
 
